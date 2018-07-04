@@ -2,18 +2,25 @@ $(document).ready(function(){
 
     var wins = 0, losses = 0, usrScore = 0;
 
-    //gets random sum between 15 & 65 --> appends getSum to HTML
-    var getSum = Math.floor(Math.random() * 50+15);
+    //gets random sum between 19-120? --> appends getSum to HTML
+    var getSum = Math.floor(Math.random() * 101)+19;
     
     console.log(getSum + ' sum');
     
+    var ruby = Math.floor(Math.random() * 11) + 1;
+    var diamond = Math.floor(Math.random() * 11) + 1;
+    var dragonstone = Math.floor(Math.random() * 11) + 1;
+    var onyx = Math.floor(Math.random() * 11) + 1;
+
+
+
     //List of OSRS gems, uses gemSum to find random number
-    var ruby, diamond, dragonstone, onyx;
+  /*var ruby, diamond, dragonstone, onyx;
     var gemNum = function(){
         return Math.floor(Math.random() * 10 + 5);
-    }
-    console.log('Ruby Val: ' + gemNum(ruby) + ' - Diamond Val: ' + gemNum(diamond)
-        + ' - DragonStone Val: ' + gemNum(dragonstone) + ' - Onyx Val: ' + gemNum(onyx));
+    }*/
+    console.log('Ruby Val: ' + ruby + ' - Diamond Val: ' + diamond
+        + ' - DragonStone Val: ' + dragonstone + ' - Onyx Val: ' + onyx);
 
     //appending variables to HTML
     $('#sum').text(getSum);
@@ -37,8 +44,8 @@ $(document).ready(function(){
         gemNum(onyx);*/
 
         console.log('Sum to Acheive: ' + getSum);
-        console.log('Ruby Val: ' + gemNum(ruby) + ' - Diamond Val: ' + gemNum(diamond)
-        + ' - DragonStone Val: ' + gemNum(dragonstone) + ' - Onyx Val: ' + gemNum(onyx));
+        console.log('Ruby Val: ' + ruby + ' - Diamond Val: ' + diamond
+        + ' - DragonStone Val: ' + dragonstone + ' - Onyx Val: ' + onyx);
         
         $('#sum').text(getSum);
         $('#total').text(usrScore)
@@ -60,9 +67,9 @@ $(document).ready(function(){
 
     //click event for gems -- Win/Loss conditionals
     $('#gemOne').on('click', function(){
-        usrScore += gemNum(ruby);
+        usrScore += ruby;
         console.log('New total: ' + usrScore);
-        console.log(gemNum(ruby))
+        console.log(ruby);
         $('#total').text(usrScore);
 
         if (usrScore == getSum){
@@ -74,7 +81,7 @@ $(document).ready(function(){
         }
     });
     $('#gemTwo').on('click', function(){
-        usrScore += gemNum(diamond);
+        usrScore += diamond;
         console.log('New total: ' + usrScore);
         $('#total').text(usrScore);
 
@@ -87,7 +94,7 @@ $(document).ready(function(){
         }
     })
     $('gemThree').on('click', function(){
-        usrScore += gemNum(dragonstone);
+        usrScore += dragonstone;
         console.log('New total: ' + usrScore);
         $('#total').text(usrScore);
 
@@ -100,7 +107,7 @@ $(document).ready(function(){
         }
     })
     $('gemFour').on('click', function(){
-        usrScore += gemNum(onyx);
+        usrScore += onyx;
         console.log('New total: ' + usrScore);
         $('#total').text(usrScore);
 
