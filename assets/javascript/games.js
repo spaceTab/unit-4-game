@@ -22,14 +22,15 @@ $(document).ready(function(){
     console.log('Ruby Val: ' + ruby + ' - Diamond Val: ' + diamond
         + ' - DragonStone Val: ' + dragonstone + ' - Onyx Val: ' + onyx);
 
-    //appending variables to HTML
+    //appending variables to HTML -- Stats -> Gems
     $('#sum').text(getSum);
     $('#wins').text(wins);
     $('#loss').text(losses);
 
     $('#ruby').text(ruby);
-    $('#diamond').text(ruby);
+    $('#diamond').text(diamond);
     $('#dragonstone').text(dragonstone);
+    $('onxy').text(onyx);
 
     $('#total').text(usrScore);
 
