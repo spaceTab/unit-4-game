@@ -23,16 +23,16 @@ $(document).ready(function(){
         + ' - DragonStone Val: ' + dragonstone + ' - Onyx Val: ' + onyx);
 
     //appending variables to HTML -- Stats -> Gems
-    $('#sum').text(getSum);
-    $('#wins').text(wins);
-    $('#loss').text(losses);
+    $('#sum').text('Sum: '+getSum);
+    $('#wins').text('Wins: '+wins);
+    $('#loss').text('Losses: '+losses);
 
     $('#ruby').text(ruby);
     $('#diamond').text(diamond);
     $('#dragonstone').text(dragonstone);
     $('onxy').text(onyx);
 
-    $('#total').text(usrScore);
+    $('#total').text('Your Score: '+usrScore);
 
     //Function to reset the game, Getting new Values, and 're-Appending'
     var gameReset = function(){
@@ -48,8 +48,8 @@ $(document).ready(function(){
         console.log('Ruby Val: ' + ruby + ' - Diamond Val: ' + diamond
         + ' - DragonStone Val: ' + dragonstone + ' - Onyx Val: ' + onyx);
         
-        $('#sum').text(getSum);
-        $('#total').text(usrScore)
+        $('#sum').text('Sum: '+getSum);
+        $('#total').text('Your Score: '+usrScore)
     }
    
     //function for game win
@@ -94,7 +94,7 @@ $(document).ready(function(){
             gameLoss();
         }
     })
-    $('gemThree').on('click', function(){
+    $('#gemThree').on('click', function(){
         usrScore += dragonstone;
         console.log('New total: ' + usrScore);
         $('#total').text(usrScore);
@@ -107,7 +107,7 @@ $(document).ready(function(){
             gameLoss();
         }
     })
-    $('gemFour').on('click', function(){
+    $('#gemFour').on('click', function(){
         usrScore += onyx;
         console.log('New total: ' + usrScore);
         $('#total').text(usrScore);

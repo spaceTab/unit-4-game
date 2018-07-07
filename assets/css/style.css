@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css?family=Galada|Roboto+Mono');
+
+* {
+    box-sizing: border-box;
+}
+body {
+    padding: 0px 5px 10px 5px;
+    max-width: 960px;
+    margin: 0px 20% 0px 20%;
+
+    background-image: url(../images/gem.jpg);
+}
+
+.head {
+    font-family: 'Galada', cursive;
+    font-size:   42px;
+    text-align:  center;
+    color: #000000;
+    margin-bottom: 25px;
+    position: relative;
+    
+    padding: 15px 10px 15px 10px;
+    line-break: auto;
+    background-image: url(../images/mcblock.png);
+    color: #ffffff;
+
+}
+
+h2 {
+    font-weight: lighter;
+    text-align:  center;
+    font-size: 32px;
+    padding-bottom: 10px;
+}
+
+p {
+    font-family: 'Roboto Mono', monospace;
+    font-size: 24px;
+    line-height: auto;
+    text-align: left;
+    padding: 0px 20px 10px 15px;
+    color: #ffffff;
+
+}
+
+.wrapper{
+    margin: 0px auto;
+}
+.container {
+    margin: 25px auto;
+    background-color:#4aaaaf;
+    padding: 0px 25px 0px 25px
+}
+
+#sum {
+    margin-top: 20px;
+    padding: 20px 25px 20px 15px;
+    font-size: 42px;
+    font-weight: bolder;
+    color: #ffffffbe;
+    float: left;
+}
+
+#wins, #loss{
+    margin-top: 25px;
+    font-size: 32px;
+    font-family: monospace;
+    font-weight: bold;
+    color: #ffffff;
+   
+}
+
+#total {
+    font-size: 24px;
+    font-family: monospace;
+    padding: 15px 5px 10px 20px;
+
+    font-family: monospace;
+    font-weight: bold;
+    text-align: center;
+    font-size: 28px;
+    color: #ffffffbe;
+    
+}
+
+img {
+    width:5%;
+    height: 35%;
+    max-width:50%;
+    margin: 10px 5px 25px 100px;
+    position: relative;
+    
+}
+
