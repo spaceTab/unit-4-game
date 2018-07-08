@@ -72,7 +72,7 @@ $(document).ready(function(){
     var gameLoss = function(){
         losses++;
         $('#loss').animate({fontSize:'5px', duration:'10000'});
-        $('#loss').animate({fontSize: '32px'});
+        $('#loss').animate({fontSize: '26px'});
         $('#loss').text('Losses: ' + losses);
         gameReset();
     }
@@ -82,7 +82,7 @@ $(document).ready(function(){
         usrScore += ruby;
         console.log('New total: ' + usrScore);
         console.log(ruby);
-        $('#total').text(usrScore);
+        $('#total').text('Your Score: ' +usrScore);
 
         if (usrScore == getSum){
             wins++;
@@ -97,7 +97,7 @@ $(document).ready(function(){
     $('#gemTwo').on('click', function(){
         usrScore += diamond;
         console.log('New total: ' + usrScore);
-        $('#total').text(usrScore);
+        $('#total').text('Your Score: ' +usrScore);
 
         if (usrScore == getSum){
             alert('Win');
@@ -110,7 +110,7 @@ $(document).ready(function(){
     $('#gemThree').on('click', function(){
         usrScore += dragonstone;
         console.log('New total: ' + usrScore);
-        $('#total').text(usrScore);
+        $('#total').text('Your Score: ' + usrScore);
 
         if (usrScore == getSum){
             alert('Win');
@@ -123,7 +123,7 @@ $(document).ready(function(){
     $('#gemFour').on('click', function(){
         usrScore += onyx;
         console.log('New total: ' + usrScore);
-        $('#total').text(usrScore);
+        $('#total').text('Your Score: ' + usrScore);
 
         if (usrScore == getSum){
             alert('win');
