@@ -43,6 +43,12 @@ $(document).ready(function(){
         gemNum(diamond);
         gemNum(dragonstone);
         gemNum(onyx);*/
+        getSum = Math.floor(Math.random() * 101)+19;
+
+        ruby = Math.floor(Math.random() * 11) + 1;
+        diamond = Math.floor(Math.random() * 11) + 1;
+        dragonstone = Math.floor(Math.random() * 11) + 1;
+        onyx = Math.floor(Math.random() * 11) + 1;
 
         console.log('Sum to Acheive: ' + getSum);
         console.log('Ruby Val: ' + ruby + ' - Diamond Val: ' + diamond
@@ -55,14 +61,14 @@ $(document).ready(function(){
     //function for game win
     var gameWin = function(){
         wins++; 
-        $('wins').text(wins);
+        $('#wins').text('Wins: ' + wins);
         gameReset();
     }
 
     //function for game win
     var gameLoss = function(){
         losses++;
-        $('#loss').text(losses);
+        $('#loss').text('Losses: ' + losses);
         gameReset();
     }
 
@@ -74,11 +80,14 @@ $(document).ready(function(){
         $('#total').text(usrScore);
 
         if (usrScore == getSum){
+            wins++;
             alert('win')
             gameWin();
+            winAnime();
         } else if (usrScore > getSum){
             alert('Loss')
             gameLoss();
+            $('#loss').text('Losses: ' + losses)
         }
     });
     $('#gemTwo').on('click', function(){
@@ -120,5 +129,5 @@ $(document).ready(function(){
             gameLoss();
         }
     })
-
+   
 });
