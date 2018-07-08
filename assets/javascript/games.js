@@ -61,13 +61,18 @@ $(document).ready(function(){
     //function for game win
     var gameWin = function(){
         wins++; 
+        $('#wins').animate({fontSize: '100px', duration:'10000'});
+        $('#wins').animate({fontSize: '32px'});
         $('#wins').text('Wins: ' + wins);
+        
         gameReset();
     }
 
     //function for game win
     var gameLoss = function(){
         losses++;
+        $('#loss').animate({fontSize:'5px', duration:'10000'});
+        $('#loss').animate({fontSize: '32px'});
         $('#loss').text('Losses: ' + losses);
         gameReset();
     }
@@ -83,7 +88,6 @@ $(document).ready(function(){
             wins++;
             alert('win')
             gameWin();
-            winAnime();
         } else if (usrScore > getSum){
             alert('Loss')
             gameLoss();

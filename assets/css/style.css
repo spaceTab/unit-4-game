@@ -9,6 +9,7 @@ body {
     margin: 0px 20% 0px 20%;
 
     background-image: url(../images/gem.jpg);
+    background-position: 50% 10%;
 }
 
 .head {
@@ -35,7 +36,7 @@ h2 {
 
 p {
     font-family: 'Roboto Mono', monospace;
-    font-size: 24px;
+    font-size: 18px;
     line-height: auto;
     text-align: left;
     padding: 0px 20px 0px 15px;
@@ -54,6 +55,7 @@ p {
 
 #sum {
     margin-top: 20px;
+    margin-left: 20px;
     padding: 20px 25px 20px 15px;
     font-size: 42px;
     font-weight: bolder;
@@ -63,6 +65,7 @@ p {
 
 #wins, #loss{
     margin-top: 25px;
+    margin-left: 30px;
     font-size: 32px;
     font-family: monospace;
     font-weight: bold;
