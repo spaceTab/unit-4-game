@@ -63,6 +63,7 @@ $(document).ready(function(){
         wins++; 
         $('#wins').animate({fontSize: '100px', duration:'10000'});
         $('#wins').animate({fontSize: '32px'});
+        
         $('#wins').text('Wins: ' + wins);
         
         gameReset();
